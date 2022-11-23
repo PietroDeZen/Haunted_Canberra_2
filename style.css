@@ -1,0 +1,258 @@
+/*IMPORTING FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Sickness";
+    src: url("fonts/Sickness.ttf") format("ttf"),
+         url("fonts/Sickness.woff") format("woff"),
+         url("fonts/Sickness.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*SETTING UP DOCUMENT, HTML, BODY*/
+*, *::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Public Sans';
+    margin:0;
+    padding:0;
+    
+}
+
+/*HEADER*/
+.header{
+    margin:0;
+    width: 100%;
+    height:100px;
+    background-color: black;
+}
+
+/*TITLE: HAUNTED CANBERRA*/
+.header .title{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 5%;
+    text-align: left;
+    font-size: 24pt;
+    font-family: "Sickness";
+    color: white;
+    font-weight: 500;
+    letter-spacing: .3em;
+    }
+.header .title .n{
+    font-family: Sickness;
+}
+.header .title .t{
+    font-family: Sickness;
+    margin-right: 10px;
+}
+
+/*NAVIGATION: HOME, STORIES, ABOUT*/
+.nav {
+    float: right;
+    margin-right: 5%;
+}
+
+.nav{
+    list-style: none;
+}
+
+.nav ul li{
+    display: inline-block;
+    margin: 45px .25em;
+    margin-bottom:0;
+    padding: 0 .5em;
+    color:rgba(255, 255, 255, .5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav li:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav li{
+    padding: 0 1.25em;
+}
+
+
+
+/*FIRST SECTION BACKGROUND-IMAGE */ 
+.first-section-background-image{
+    /*display:flex;*/
+    width:100%;
+    height: 100vh;
+    background: url("images/background-image-3.png") no-repeat;
+    background-size:cover;
+    justify-content: center;
+    top:-50%;
+    /*align-items: center;*/
+}
+
+
+/*HOPEFULLY FUNCTIONING CAROUSEL*/
+.bodee{
+    width: 100%;
+    height:600px;
+    background-color: black;
+    padding-top:100px;
+}
+
+.slider{
+    
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left:32%;
+   
+}
+
+.slides{
+    width: 500%;
+    height: 300px;
+    display:flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width:20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 500px;
+    height: 300px;
+}
+
+/*css for manual slide navigation*/
+.navigation-manual{
+   position: absolute;
+   width:500px;
+   margin-top: -40px;
+   display:flex;
+   justify-content:center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #ffffff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    margin-top: 260px;
+}
+
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius:10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #ffffff;
+
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #ffffff;
+
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #ffffff;
+
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #ffffff;
+
+}
+
+
+
+.second-section{
+    position: static;
+    width:100%;
+    height: 800px;
+    background-color: rgba(0,0,0, 1);
+}
+
+.second-section h2,p{
+    color:white;
+
+}
+
+.stories-title{
+    position: relative;
+    margin-top: 100px;
+}
+
+.grid-container{
+ margin:0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content:center;
+    align-content:center;
+    grid-gap: 10px;
+    height: 700px;
+}
+
+.grid img{
+    width: 400px;
+    height: 300px;
+}
+
+#lightbox{
+    position:relative;
+    z-index: 1000;
+    top:0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+

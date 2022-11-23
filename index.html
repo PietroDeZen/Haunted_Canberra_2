@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="images/website-icon.png">
+
+    <title>Haunted Canberra</title>
+
+</head>
+
+
+<body>
+
+    <header class="header"> <!--TO DO: set background color to black-->
+
+      
+        <h1 class="title">Hau<span class="n">n</span><span class="t">t</span>ed Canberra</h1> <!--TO DO: set font-color to white, change position to top-left-->
+        
+            
+        <nav class="nav main-nav"> <!--TO DO: remove text-style, set font-color to white, change position to top-right-->
+            <ul>
+               <li>Home</li>
+               <li>Stories</li>
+               <li>About</li>
+            </ul>
+        </nav>
+
+    </header>
+
+     <div class="first-section-background-image" aria-label="Newest Photo"></div>
+       
+      <!--Fake body start-->
+        <div class="bodee">
+
+           <div class="slider" >  
+                 <div class="slides" >
+      
+                  <!--radio buttons start -->
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <!--radio buttons end -->
+
+                  <!--slide images start -->
+                  
+                    <div class="slide first">
+                      <img  src="images/cottege.jpg" alt="cottege">
+                    </div>
+                    <div class="slide">
+                      <img  src="images/hospital.jpg" alt="hospital">
+                    </div>
+                    <div class="slide">
+                      <img  src="images/Hotel-Kurrajong.jpg" alt="hotel">
+                    </div>
+                    <div class="slide">
+                      <img  src="images/instittute-of-anatomy.jpg" alt="Institute of Anatomy">
+                    </div>
+                  
+                  <!--slide images end -->
+
+                  <!--automatic navigation start-->
+                  <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                   </div>
+                  <!--automatic navigation end-->
+                </div>
+
+                <!--Manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+
+                <!--Manual navigation end--> 
+          </div>      
+       </div>
+      <!--Fake body end-->
+
+
+   <!--Second Section start -->
+  <div class="second-section">
+   <!--Section title-->
+    <h2 class="stories-title">Stories</h2>
+   <!--Section paragraph-->
+    <p>
+       Though Canberra could be considered a young city, 
+       many are the people that walked the city leaving some marks behind, 
+       some her left their life too 
+    </p>
+<!--Lightbox-container start-->
+<div class="grid-container" name="gridContainer">
+<!--Lightbox start-->
+<div class="grid">
+  <!--images start -->
+  <img src="images/cottege.jpg" alt="Blundells Cottage" width="500" height="300">
+  <img src="images/hospital.jpg" alt="Canberra Hospital" width="500" height="300">
+  <img src="images/Hotel-Kurrajong.jpg" alt="Hotel Kurrajong" width="500" height="300">
+  <img src="images/instittute-of-anatomy.jpg" alt="Institute of Anatomy" width="500" height="300">
+  <!--images end -->
+</div>
+<!--Lightbox end-->
+</div>
+<!--Lightbox-container end-->
+</div>
+<!--Second Section end -->
+
+  
+    <footer>
+        <h3>Haunted Canberra</h3>
+        <p> &copy; 2022 All Rights Reserved</p>
+    </footer>
+</body>
+
+
+</html>
